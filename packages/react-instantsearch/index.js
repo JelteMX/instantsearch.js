@@ -1,5 +1,6 @@
 import InstantSearch from './src/core/InstantSearch';
 import createConnector from './src/core/createConnector';
+import overrideTheme from './src/core/styling';
 import highlight from './src/core/highlight.js';
 import overrideTheme from './src/core/styling';
 
