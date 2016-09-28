@@ -28,6 +28,7 @@ import ScrollTo from './src/widgets/ScrollTo/index.js';
 export {
   InstantSearch,
   createConnector,
+  overrideTheme,
 
   Hits,
   HitsPerPage,
