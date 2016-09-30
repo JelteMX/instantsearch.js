@@ -12,7 +12,7 @@ stories.add('default ', () =>
   <Wrapper >
     <HitsPerPage
       defaultHitsPerPage={20}
-      items={[{value: 10}, {value: 20}, {value: 30}, {value: 40}]}/>
+      items={[10, 20, 30, 40]}/>
   </Wrapper>
 ).add('defaultSelect', () =>
   <Wrapper >
