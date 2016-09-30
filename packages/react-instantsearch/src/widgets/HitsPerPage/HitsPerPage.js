@@ -11,29 +11,12 @@ class HitsPerPage extends Component {
     hitsPerPage: PropTypes.number.isRequired,
     applyTheme: PropTypes.func.isRequired,
     createURL: PropTypes.func.isRequired,
-
-    /**
-     * List of hits per page options.
-     * Passing a list of numbers `[n]` is a shorthand for `[{value: n, label: n}]`.
-     * @public
-     * @defines HitsPerPageItem
-     */
-    items: PropTypes.oneOfType([
-      PropTypes.arrayOf(
+    items: PropTypes.arrayOf(
         PropTypes.shape({
-          /**
-           * Number of hits to display.
-           */
           value: PropTypes.number.isRequired,
-
-          /**
-           * Node to render in place of the option item.
-           */
           label: PropTypes.node,
         })
-      ),
-      PropTypes.arrayOf(PropTypes.number),
-    ]),
+      ).isRequired,
   };
 
   render() {

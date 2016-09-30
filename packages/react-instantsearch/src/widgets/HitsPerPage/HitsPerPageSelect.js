@@ -10,30 +10,12 @@ class HitsPerPageSelect extends Component {
     refine: PropTypes.func.isRequired,
     applyTheme: PropTypes.func.isRequired,
     hitsPerPage: PropTypes.number.isRequired,
-
-    /**
-     * List of hits per page options.
-     * Passing a list of numbers `[n]` is a shorthand for `[{value: n, label: n}]`.
-     * Beware: Contrary to `HitsPerPage`, the `label` of `HitsPerPage` items must be either a string or a number.
-     * @public
-     * @defines HitsPerPageSelectItem
-     */
-    items: PropTypes.oneOfType([
-      PropTypes.arrayOf(
-        PropTypes.shape({
-          /**
-           * Number of hits to display.
-           */
-          value: PropTypes.number.isRequired,
-
-          /**
-           * Label to display on the option.
-           */
-          label: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-        })
-      ),
-      PropTypes.arrayOf(PropTypes.number),
-    ]),
+    items: PropTypes.arrayOf(
+      PropTypes.shape({
+        value: PropTypes.number.isRequired,
+        label: PropTypes.node,
+      })
+    ).isRequired,
   };
 
   render() {

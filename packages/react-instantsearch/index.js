@@ -2,7 +2,6 @@ import InstantSearch from './src/core/InstantSearch';
 import createConnector from './src/core/createConnector';
 import overrideTheme from './src/core/styling';
 import highlight from './src/core/highlight.js';
-import overrideTheme from './src/core/styling';
 
 import Hits from './src/widgets/Hits/index.js';
 import HitsPerPage from './src/widgets/HitsPerPage/index.js';
@@ -29,7 +28,6 @@ import ScrollTo from './src/widgets/ScrollTo/index.js';
 export {
   InstantSearch,
   createConnector,
-  overrideTheme,
 
   Hits,
   HitsPerPage,
