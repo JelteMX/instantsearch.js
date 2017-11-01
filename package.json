@@ -23,7 +23,9 @@
     "test:functional": "wdio functional-tests/wdio.conf.js",
     "test:functional:dev": "babel-node scripts/dev-functional-tests",
     "test:functional:dev:debug-server": "PORT=9090 babel-node scripts/dev-functional-tests-debug-server",
-    "serve": "./scripts/serve.sh"
+    "serve": "./scripts/serve.sh",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": "algolia/instantsearch.js",
   "devDependencies": {
@@ -93,7 +95,9 @@
     "react": "15.3.2",
     "react-dom": "15.3.2",
     "react-nouislider": "1.13.0",
-    "to-factory": "1.0.0"
+    "to-factory": "1.0.0",
+    "snyk": "^1.47.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
